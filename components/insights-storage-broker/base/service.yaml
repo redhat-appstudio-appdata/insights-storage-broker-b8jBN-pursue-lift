@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: insights-storage-broker
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: insights-storage-broker
+    app.kubernetes.io/part-of: insights-storage-broker
+  name: insights-storage-broker
+spec:
+  ports:
+  - port: 9000
+    targetPort: 9000
+  selector:
+    app.kubernetes.io/instance: insights-storage-broker
+status:
+  loadBalancer: {}
