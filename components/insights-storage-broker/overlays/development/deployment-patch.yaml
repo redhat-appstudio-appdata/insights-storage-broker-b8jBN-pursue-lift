@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-pipeline-tenant/insights-storage-broker/insights-storage-broker@sha256:f557f747fcea7aeca59d1895c15433c66b30850a1e38f833fcef529ed0b0b151
+      - image: quay.io/redhat-user-workloads/hcc-pipeline-tenant/insights-storage-broker/insights-storage-broker@sha256:913ae93f0b0f1dc0544696cb1f7fdf71766a1ddb049d04d0e397b36d1fde772e
         name: container-image
         resources: {}
 status: {}
