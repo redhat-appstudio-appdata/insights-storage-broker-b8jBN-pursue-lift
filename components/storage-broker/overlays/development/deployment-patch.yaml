@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: storage-broker
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-pipeline-tenant/insights-storage-broker/storage-broker@sha256:c326d0ceaf42e56a562f168d9242d1b75e4c00c335f1992f390bec8b53b4de2b
+        name: container-image
+        resources: {}
+status: {}
